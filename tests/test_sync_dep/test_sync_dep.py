@@ -1,6 +1,6 @@
 import unittest
 from src.depends_tools.context import DependencyContext
-from src.depends_tools.utils import inject
+from src.depends_tools.util import inject
 from src.depends_tools.depends import Depends
 
 
