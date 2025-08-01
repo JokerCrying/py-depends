@@ -5,11 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "py-depends"
 version = "1.0.0"
-description = "A Python dependency injection framework"
+description = "A Python dependency injection framework, it's like fastapi.Depends"
 readme = "README.md"
 requires-python = ">=3.7"
 authors = [
-    {name = "py-depends"},
+    {name = "surp1us"},
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -39,10 +39,9 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/example/py-depends"
-Repository = "https://github.com/example/py-depends"
-Documentation = "https://py-depends.readthedocs.io"
-"Bug Tracker" = "https://github.com/example/py-depends/issues"
+Homepage = "https://github.com/JokerCrying/py-depends"
+Repository = "https://github.com/JokerCrying/py-depends"
+"Bug Tracker" = "https://github.com/JokerCrying/py-depends/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
