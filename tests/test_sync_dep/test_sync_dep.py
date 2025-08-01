@@ -50,7 +50,7 @@ class TestSyncDeps(unittest.TestCase):
 
     def test_recursion_dep(self):
         @inject
-        def main(db: set = Depends(get_pg_db)):
+        def main(db: str = Depends(get_pg_db)):
             print('Using', db)
             return db
 
