@@ -42,4 +42,4 @@ print(result)  # 输出: User from database_connection
 
 ## 支持
 
-如果您遇到任何问题或有疑问，请在GitHub上[提交issue](https://github.com/JokerCrying/py-depends/issues)。
+如果您遇到任何问题或有疑问，请在GitHub上[提交issue](https://github.com/JokerCrying/py-depends-tools/issues)。

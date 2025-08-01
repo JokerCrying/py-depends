@@ -39,9 +39,9 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/JokerCrying/py-depends"
-Repository = "https://github.com/JokerCrying/py-depends"
-"Bug Tracker" = "https://github.com/JokerCrying/py-depends/issues"
+Homepage = "https://github.com/JokerCrying/py-depends-tools"
+Repository = "https://github.com/JokerCrying/py-depends-tools"
+"Bug Tracker" = "https://github.com/JokerCrying/py-depends-tools/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
