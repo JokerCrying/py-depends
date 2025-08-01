@@ -1,6 +1,6 @@
 import asyncio
 import unittest
-from src.py_depends.call_factory import AsyncDepends, AsyncGenerateDepends
+from src.depends_tools.call_factory import AsyncDepends, AsyncGenerateDepends
 
 
 async def async_func():

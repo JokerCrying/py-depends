@@ -1,7 +1,7 @@
 import unittest
-from src.py_depends.context import DependencyContext
-from src.py_depends.utils import inject
-from src.py_depends.depends import Depends
+from src.depends_tools.context import DependencyContext
+from src.depends_tools.utils import inject
+from src.depends_tools.depends import Depends
 
 
 def get_db():

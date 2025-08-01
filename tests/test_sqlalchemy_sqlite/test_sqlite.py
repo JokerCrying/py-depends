@@ -1,8 +1,8 @@
 import random
 import unittest
-from src.py_depends.context import DependencyContext
-from src.py_depends.utils import inject
-from src.py_depends.depends import Depends
+from src.depends_tools.context import DependencyContext
+from src.depends_tools.utils import inject
+from src.depends_tools.depends import Depends
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker, Session
 from sqlalchemy import Column, Integer, String

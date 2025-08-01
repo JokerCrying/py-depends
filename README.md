@@ -14,13 +14,13 @@ A lightweight and elegant Python dependency injection framework.
 ## Installation
 
 ```bash
-pip install py-depends
+pip install depends-tools
 ```
 
 ## Quick Start
 
 ```python
-from py_depends import Depends, inject
+from depends_tools import Depends, inject
 
 # Define a dependency
 def get_database():

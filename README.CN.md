@@ -14,13 +14,13 @@
 ## 安装
 
 ```bash
-pip install py-depends
+pip install depends-tools
 ```
 
 ## 快速开始
 
 ```python
-from py_depends import Depends, inject
+from depends_tools import Depends, inject
 
 # 定义一个依赖
 def get_database():

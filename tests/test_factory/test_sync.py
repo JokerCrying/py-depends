@@ -1,5 +1,5 @@
 import unittest
-from src.py_depends.call_factory import SyncDepends, SyncGenerateDepends
+from src.depends_tools.call_factory import SyncDepends, SyncGenerateDepends
 
 
 def sync_gene():
