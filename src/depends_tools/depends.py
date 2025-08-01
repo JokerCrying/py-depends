@@ -2,7 +2,7 @@ import inspect
 from typing import Callable, Optional
 from functools import wraps
 from .d_type import T
-from . import utils
+from .injector import inject_call
 
 
 class Depends:
@@ -24,7 +24,7 @@ class Depends:
 
         @wraps(func)
         def wrapped(*args, **kwargs):
-            return utils.inject_call(func, *args, **kwargs)
+            return inject_call(func, *args, **kwargs)
 
         # 标记为已包装
         func._depends_wrapped = True
@@ -35,7 +35,7 @@ class Depends:
 
     def __call__(self, *args, **kwargs) -> T:
         """透明调用依赖函数"""
-        return utils.inject_call(self.dependency, *args, **kwargs)
+        return inject_call(self.dependency, *args, **kwargs)
 
     def __repr__(self) -> str:
         return f"Depends({self.dependency.__name__})"

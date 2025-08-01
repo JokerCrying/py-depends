@@ -1,5 +1,5 @@
 from .depends import Depends
-from .utils import inject
+from .util import inject
 from .context import DependencyContext
 
 __all__ = [

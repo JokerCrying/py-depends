@@ -1,7 +1,5 @@
 import inspect
-from typing import Callable, Any, Dict
-from functools import wraps
-from .depends import Depends
+from typing import Callable, Any
 from .resolver import DependencyResolver
 from .context import DependencyContext
 from .d_type import DependsType
@@ -20,6 +18,9 @@ def inject_call(func: Callable, *args, **kwargs) -> Any:
     Returns:
         函数执行结果
     """
+    # 延迟导入避免循环依赖
+    from .depends import Depends
+    
     context = DependencyResolver.get_context()
 
     # 如果是Depends实例，获取实际依赖函数
@@ -108,14 +109,3 @@ def _resolve_dependency(depends_func: Callable, context: DependencyContext) -> A
     context.cache[depends_func] = result
 
     return result
-
-
-# 创建透明调用的包装函数
-def inject(func: Callable) -> Callable:
-    """使函数支持透明依赖注入的装饰器"""
-
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        return inject_call(func, *args, **kwargs)
-
-    return wrapper
