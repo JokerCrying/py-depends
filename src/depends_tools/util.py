@@ -1,6 +1,6 @@
 from functools import wraps
 from .injector import inject_call
-from .d_type import T, F
+from .d_type import F
 
 
 # 创建透明调用的包装函数
